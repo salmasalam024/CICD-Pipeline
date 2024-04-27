@@ -1,0 +1,31 @@
+---
+- name: Install and Configure Apache HTTP Server
+  hosts: third_virtual_machine
+  become: yes
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Apache HTTP Server
+      apt:
+        name: apache2
+        state: present
+
+    - name: Start Apache service
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Allow Apache through firewall
+      ufw:
+        rule: allow
+        name: Apache
+        port: http
+
+    - name: Create index.html file
+      copy:
+        content: "<html><h1>Salma Salah Welcome You To Project 2 Submitted to Eng. Amr at Vodafone!</h1></html>"
+        dest: /var/www/html/index.html
