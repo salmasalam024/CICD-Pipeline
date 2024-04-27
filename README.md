@@ -1,7 +1,7 @@
 
 ---
-
-# Jenkins Pipeline for Ansible Deployment and Group Member Capture
+#Documentation on Ansible playbook and Jenkins pipeline configuration. 
+##Jenkins Pipeline for Ansible Deployment and Group Member Capture
 
 This Jenkins pipeline automates the deployment of Ansible playbooks triggered by updates in a GitLab repository. Additionally, it captures information about group members for notification purposes upon pipeline completion or failure.
 
@@ -18,18 +18,6 @@ This Jenkins pipeline automates the deployment of Ansible playbooks triggered by
 4. **Email Notifications**:
    - Email notifications are sent upon completion or failure of the pipeline.
    - Notifications include pipeline status, group members' information, and the date of execution.
-
-## Prerequisites
-
-- Jenkins server installed and configured on the first virtual machine.
-- Ansible installed and configured on the Jenkins server.
-- GitLab repository accessible from the Jenkins server.
-
-## Pipeline Setup
-
-1. **Install Required Jenkins Plugins**:
-   - Install the following Jenkins plugins:
-     - Pipeline Plugin
      - Git Plugin
      - Email Extension Plugin (for sending email notifications)
 
