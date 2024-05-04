@@ -1,15 +1,15 @@
 ---
 - name: Install and Configure Apache HTTP Server
-  hosts: third_virtual_machine
+  hosts: 192.168.1.21
   become: yes
 
   tasks:
-    - name: Update apt cache
-      apt:
+    - name: Update yum cache
+      yum:
         update_cache: yes
 
     - name: Install Apache HTTP Server
-      apt:
+      yum:
         name: apache2
         state: present
 
