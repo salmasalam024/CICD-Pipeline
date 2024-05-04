@@ -1,6 +1,6 @@
 
 ---
-# Documentation on Ansible playbook and Jenkins pipeline configuration. 
+# Documentation on the Project's steps. 
 
 ## Workflow Overview
 
