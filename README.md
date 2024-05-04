@@ -21,8 +21,7 @@
 4. **Email Notifications**:
    - Email notifications are sent upon failure of the pipeline.
    - Notifications include pipeline status, group members' information, and the date of execution.
-     - Git Plugin
-     - Email Extension Plugin (for sending email notifications)
+
 
 ## Steps
 
