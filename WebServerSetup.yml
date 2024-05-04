@@ -27,5 +27,5 @@
 
     - name: Create index.html file
       copy:
-        content: "<html><h1>Salma Salah Welcome You To Project 2 Submitted to Eng. Amr at Vodafone!</h1></html>"
+        content: "<html><h1>Salma Salah Welcome You !</h1></html>"
         dest: /var/www/html/index.html
